@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Aureate Labs Pvt Ltd.
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer versions in the future.
+ * If you wish to customize this module for your needs.
+ * Please contact us https://aureatelabs.com/contact-us.
+ *
+ * @category   Aureatelabs
+ * @package    Aureatelabs_StockAlert
+ * @author     Aureate Labs Team
+ * @copyright  Copyright (c) 2019 Aureate Labs. ( https://aureatelabs.com )
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Aureatelabs_StockAlert" setup_version="1.0.0">
+        <sequence>
+            <Magento_ProductAlert/>
+        </sequence>
+    </module>
+</config>

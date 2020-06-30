@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Aureate Labs Pvt Ltd.
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer versions in the future.
+ * If you wish to customize this module for your needs.
+ * Please contact us https://aureatelabs.com/contact-us.
+ *
+ * @category   Aureatelabs
+ * @package    Aureatelabs_StockAlert
+ * @author     Aureate Labs Team
+ * @copyright  Copyright (c) 2019 Aureate Labs. ( https://aureatelabs.com )
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/notifyMe" method="POST">
+        <service class="Aureatelabs\StockAlert\Api\CatalogManagementInterface" method="notify"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>
